@@ -1,0 +1,131 @@
+﻿#bg-main {
+    background-image: url("main6.JPG");
+    width: 100%;
+    height: 700px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-size: 50px;
+    color: #FDF6EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    #bg-main::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* dark overlay */
+       }
+
+
+#main {
+    display: flex;
+    
+    background-color:firebrick;
+    padding:100px;
+}
+    #main > h2 {
+        font-size: 50px;
+        color: #FDF6EC;
+    }
+
+#main2-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+   
+
+    #pop {
+        background-image: url(pop.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        border-block-color:red;
+        border-radius:10px;
+    }
+#old {
+    background-image: url(old.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px; 
+    border-radius:10px;
+}
+#classical {
+    background-image: url(classical.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+#folk {
+    background-image: url(folk.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+#melody {
+    background-image: url(melody.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#bhangra {
+    background-image: url(bhangra.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    #bg-main {
+        font-size: 35px;
+        height: 500px;
+    }
+
+    #main2-sec {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .genre-card {
+        width: 90%;
+        height: 150px;
+    }
+
+    #main > h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #bg-main {
+        font-size: 24px;
+        height: 400px;
+    }
+
+    .genre-card {
+        height: 130px;
+    }
+}
+
+
+
+
