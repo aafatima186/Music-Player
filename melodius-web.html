@@ -3,9 +3,188 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Melody Music|Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="StyleSheet1.css" />
 </head>
 <body>
+    <div id="melody-main">
 
+        <h1 data-aos="fade-left">ᗰᗴᒪᗝᗪƳ ᗰᑌᔕᎥᑕ</h1>
+        <hr>
+        <h2 data-aos="zoom-out">
+            "Enjoy the soulful charm of Bollywood's most melodious tunes."
+        </h2>
+
+
+
+
+        <div id="melody-audio">
+            <section id="melody-sec">
+
+                <div class="melody-a" data-aos="zoom-in">
+
+                   
+
+                    <audio id="player-tujhe" controls>
+                        <source src="tujhe.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+                    <div class="melody-data">
+
+                        <div class="melody-pic">
+                            <img src="tujhe-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Tujhe Dekha Tou</p></li>
+                            <li><p><b>ARTIST</b>: Lata Mangeshkar, Kumar Sanu</p></li>
+                            <li><p><b>ALBUM</b>:Dilwale Dulhania Le Jayenge</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="melody-a" data-aos="zoom-in">
+
+                    
+
+                    <audio id="player-kuch" controls>
+                        <source src="kuch.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="melody-data">
+
+                        <div class="melody-pic">
+                            <img src="kuch-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Kuch Kuch Hota Hai</p></li>
+                            <li><p><b>ARTIST</b>:Alka Yagnik, Jatin-Lalit</p></li>
+                            <li><p><b>ALBUM</b>:Kuch Kuch Hota Hai</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="melody-a" data-aos="zoom-in">
+
+                    
+
+                    <audio id="player-yeh-hum" controls>
+                        <source src="yeh-hum.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="melody-data">
+
+                        <div class="melody-pic">
+                            <img src="yeh-hum-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Yeh Hum Aagaye Hain Kahan</p></li>
+                            <li><p><b>ARTIST</b>:Lata Mangeshkar, Udit Narayan</p></li>
+                            <li><p><b>ALBUM</b>:Veer-Zaara</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="melody-a" data-aos="zoom-in">
+
+                    
+
+                    <audio id="player-tere-mere" controls>
+                        <source src="tere-mere.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="melody-data">
+
+                        <div class="melody-pic">
+                            <img src="tere-mere-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Tere Mere Honton Pe</p></li>
+                            <li><p><b>ARTIST</b>:Lata Mangeshkar, Babla Mehta</p></li>
+                            <li><p><b>ALBUM</b>:Chandni</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="melody-a" data-aos="zoom-in">
+
+                    
+
+                    <audio id="player-hum-tum" controls>
+                        <source src="hum-tum.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="melody-data">
+
+                        <div class="melody-pic">
+                            <img src="hum-tum-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>: Hum Tum</p></li>
+                            <li><p><b>ARTIST</b>: Babul Supriyo, Alka Yagnik</p></li>
+                            <li><p><b>ALBUM</b>:Hum Tum</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+
+            </section>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <script>
+        const playerTujhe = new Plyr('#player-tujhe');
+        const playerHumTum = new Plyr('#player-hum-tum');
+        const playerTereMere = new Plyr('#player-tere-mere');
+        const playerYehHum = new Plyr('#player-yeh-hum');
+        const playerKuch = new Plyr('#player-kuch');
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
 </body>
 </html>

@@ -14,13 +14,15 @@
     text-align: center;
 }
 
+
+
     #bg-main::before {
         content: '';
         position: absolute;
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.4); /* dark overlay */
-       }
+    }
 
 
 #main {
@@ -49,16 +51,18 @@
         background-repeat: no-repeat;
         width: 200px;
         height: 200px;
-        border-block-color:red;
+        border:solid;
         border-radius:10px;
+
     }
-#old {
+    #old {
     background-image: url(old.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 200px;
-    height: 200px; 
-    border-radius:10px;
+    height: 200px;
+    border: solid;
+    border-radius: 10px;
 }
 #classical {
     background-image: url(classical.jpg);
@@ -66,6 +70,7 @@
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
+    border: solid;
     border-radius: 10px;
 }
 #folk {
@@ -74,6 +79,7 @@
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
+    border: solid;
     border-radius: 10px;
 }
 #melody {
@@ -82,6 +88,7 @@
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
+    border: solid;
     border-radius: 10px;
 }
 
@@ -91,40 +98,733 @@
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
+    border: solid;
     border-radius: 10px;
 }
-@media (max-width: 768px) {
-    #bg-main {
-        font-size: 35px;
+
+#pop:hover{
+    width:180px;
+    height:180px;
+}
+#old:hover {
+    width: 180px;
+    height: 180px;
+}
+#folk:hover {
+    width: 180px;
+    height: 180px;
+}
+#bhangra:hover {
+    width: 180px;
+    height: 180px;
+}
+#classical:hover {
+    width: 180px;
+    height: 180px;
+}
+#melody:hover {
+    width: 180px;
+    height: 180px;
+}
+
+
+.cards:hover {
+    width: 180px;
+    height: 180px;
+}
+
+
+
+.cards > a {
+    bottom:30px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+
+
+    .cards > a:hover{
+        color:firebrick;
+        
+    }
+
+#pop-main {
+    
+    padding:100px;
+    background-color: darkorange;
+    font-size: 45px;
+    color: #FDF6EC;
+    text-align: left;
+    
+}
+
+    #pop-main > h2 {
+        text-align :center;
+        font-size:25px;
+
+    }
+
+
+#pop-audio {
+    
+    padding: 100px;
+   
+}
+#pop-sec{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+}
+.pop-a {
+    margin-top: -30px;
+    margin-left: -30px;
+    background-color: hotpink;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: Arial;
+    color: azure;
+    border: dashed;
+    border-block-color: azure;
+}
+/* Target Plyr player */
+.pop-a > .plyr--audio {
+    --plyr-color-main: hotpink; /* Main pink color */
+}
+
+    /* Optional: background color and styling */
+    .pop-a > .plyr--audio .plyr__controls {
+        background-color: #ffe6f0; /* light pink background */
+        border-radius: 8px;
+    }
+
+    .pop-a > .plyr--audio .plyr__control {
+        color: white;
+        background-color: hotpink;
+        border-radius: 5px;
+    }
+
+    .pop-a > .plyr--audio .plyr__progress input[type=range] {
+        background-color: pink;
+    }
+    .pop-data{
+        display:flex;
+        justify-content:flex-start;
+        flex-direction:row;
+    }
+    .pop-pic>img{
+        height:150px;
+        width:130px;
+    }
+
+
+#melody-main {
+    padding: 100px;
+    background-color:indianred;
+    font-size: 45px;
+    color: #FDF6EC;
+    text-align: left;
+}
+
+    #melody-main > h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+#melody-audio {
+    padding: 100px;
+}
+
+#melody-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.melody-a {
+    margin-top: -30px;
+    margin-left: -30px;
+    background-color:darksalmon;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: Arial;
+    color: azure;
+    border:groove;
+    border-block-color: azure;
+}
+    /* Target Plyr player */
+    .melody-a > .plyr--audio {
+        --plyr-color-main: darksalmon; /* Main pink color */
+    }
+
+        /* Optional: background color and styling */
+        .melody-a > .plyr--audio .plyr__controls {
+            background-color:lightcoral; /* light pink background */
+            border-radius: 8px;
+        }
+
+        .melody-a > .plyr--audio .plyr__control {
+            color: white;
+            background-color: darksalmon;
+            border-radius: 5px;
+        }
+
+        .melody-a > .plyr--audio .plyr__progress input[type=range] {
+            background-color: lightcoral;
+        }
+
+.melody-data {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.melody-pic > img {
+    height: 150px;
+    width: 130px;
+}
+
+
+
+
+#old-main {
+    padding: 100px;
+    background-color:darkkhaki;
+    font-size: 45px;
+    color: #FDF6EC;
+    text-align: left;
+}
+
+    #old-main > h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+#old-audio {
+    padding: 100px;
+}
+
+#old-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.old-a {
+    margin-top: -30px;
+    margin-left: -30px;
+    background-color:darkgoldenrod;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: Arial;
+    color: azure;
+    border:groove;
+    border-block-color: azure;
+}
+    /* Target Plyr player */
+    .old-a > .plyr--audio {
+        --plyr-color-main: darkgoldenred; /* Main pink color */
+    }
+
+        /* Optional: background color and styling */
+        .old-a > .plyr--audio .plyr__controls {
+            background-color:burlywood; /* light pink background */
+            border-radius: 8px;
+        }
+
+        .old-a > .plyr--audio .plyr__control {
+            color: white;
+            background-color:darkgoldenrod;
+            border-radius: 5px;
+        }
+
+        .old-a > .plyr--audio .plyr__progress input[type=range] {
+            background-color:burlywood;
+        }
+
+.old-data {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.old-pic > img {
+    height: 150px;
+    width: 130px;
+}
+
+
+#classical-main {
+    padding: 100px;
+    background-color:saddlebrown;
+    font-size: 45px;
+    color: #FDF6EC;
+    text-align: left;
+}
+
+    #classical-main > h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+#classical-audio {
+    padding: 100px;
+}
+
+#classical-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.classical-a {
+    margin-top: -30px;
+    margin-left: -30px;
+    background-color:burlywood;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: Arial;
+    color: azure;
+    border:ridge;
+    border-block-color: azure;
+}
+    /* Target Plyr player */
+    .classical-a > .plyr--audio {
+        --plyr-color-main: rosybrown; /* Main pink color */
+    }
+
+        /* Optional: background color and styling */
+        .classical-a > .plyr--audio .plyr__controls {
+            background-color:bisque; /* light pink background */
+            border-radius: 8px;
+        }
+
+        .classical-a > .plyr--audio .plyr__control {
+            color: white;
+            background-color: rosybrown;
+            border-radius: 5px;
+        }
+
+        .classical-a > .plyr--audio .plyr__progress input[type=range] {
+            background-color:bisque;
+        }
+
+.classical-data {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.classical-pic > img {
+    height: 150px;
+    width: 130px;
+}
+
+
+#folk-main {
+    padding: 100px;
+    background-color:cadetblue;
+    font-size: 45px;
+    color: #FDF6EC;
+    text-align: left;
+}
+
+    #folk-main > h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+#folk-audio {
+    padding: 100px;
+}
+
+#folk-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.folk-a {
+    margin-top: -30px;
+    margin-left: -30px;
+    background-color:lightcoral;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: Arial;
+    color: azure;
+    border: ridge;
+    border-block-color: azure;
+}
+    /* Target Plyr player */
+    .folk-a > .plyr--audio {
+        --plyr-color-main: lightcoral; /* Main pink color */
+    }
+
+        /* Optional: background color and styling */
+        .folk-a > .plyr--audio .plyr__controls {
+            background-color: bisque; /* light pink background */
+            border-radius: 8px;
+        }
+
+        .folk-a > .plyr--audio .plyr__control {
+            color: white;
+            background-color:lightcoral;
+            border-radius: 5px;
+        }
+
+        .folk-a > .plyr--audio .plyr__progress input[type=range] {
+            background-color: bisque;
+        }
+
+.folk-data {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.folk-pic > img {
+    height: 150px;
+    width: 130px;
+}
+
+
+#bhangra-main {
+    padding: 100px;
+    background-color:darkred;
+    font-size: 45px;
+    color: #FDF6EC;
+    text-align: left;
+}
+
+    #bhangra-main > h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+#bhangra-audio {
+    padding: 100px;
+}
+
+#bhangra-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.bhangra-a {
+    margin-top: -30px;
+    margin-left: -30px;
+    background-color:forestgreen;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: Arial;
+    color: azure;
+    border: ridge;
+    border-block-color: azure;
+}
+    /* Target Plyr player */
+    .bhangra-a > .plyr--audio {
+        --plyr-color-main: forestgreen; /* Main pink color */
+    }
+
+        /* Optional: background color and styling */
+        .bhangra-a > .plyr--audio .plyr__controls {
+            background-color:lightgreen; /* light pink background */
+            border-radius: 8px;
+        }
+
+        .bhangra-a > .plyr--audio .plyr__control {
+            color: white;
+            background-color: forestgreen;
+            border-radius: 5px;
+        }
+
+        .bhangra-a > .plyr--audio .plyr__progress input[type=range] {
+            background-color: lightgreen;
+        }
+
+.bhangra-data {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.bhangra-pic > img {
+    height: 150px;
+    width: 130px;
+}
+
+    @media (max-width: 768px) {
+        #bg-main {
+        font-size: 30px;
         height: 500px;
+        background-size: contain;
     }
 
+        #bg-main::before {
+           
+            height: inherit;
+            width:100%;
+            
+        }
+    #main {
+        padding: 70px;
+        display: grid;
+        
+    }
     #main2-sec {
-        flex-direction: column;
-        align-items: center;
+        
+        justify-content: center;
+        gap: 10px;
     }
 
-    .genre-card {
-        width: 90%;
-        height: 150px;
-    }
 
     #main > h2 {
         font-size: 32px;
         text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    #bg-main {
-        font-size: 24px;
-        height: 400px;
+        margin-top: -30px;
+        margin-bottom: 50px;
     }
 
-    .genre-card {
-        height: 130px;
+    #pop {
+        width: 100px;
+        height: 100px;
     }
+
+    #old {
+        width: 100px;
+        height: 100px;
+    }
+
+    #folk {
+        width: 100px;
+        height: 100px;
+    }
+
+    #classical {
+        width: 100px;
+        height: 100px;
+    }
+
+    #bhangra {
+        width: 100px;
+        height: 100px;
+    }
+
+    #melody {
+        width: 100px;
+        height: 100px;
+    }
+    
+
 }
+
+
+
+    @media (max-width: 480px) {
+        #bg-main {
+            font-size: 30px;
+            height: 400px;
+            background-size: contain;
+        }
+
+            #bg-main::before {
+                height: inherit;
+                width: 100%;
+            }
+
+        #main {
+            display: grid;
+            padding: 70px;
+        }
+
+            #main > h2 {
+                margin-top: -30px;
+                margin-bottom: 50px;
+            }
+
+        #main2-sec {
+            justify-content: center;
+            gap: 10px;
+        }
+
+
+        #pop {
+            width: 80px;
+            height: 80px;
+        }
+
+        #old {
+            width: 80px;
+            height:80px;
+        }
+
+        #folk {
+            width: 80px;
+            height: 80px;
+        }
+
+        #classical {
+            width: 80px;
+            height: 80px;
+        }
+
+        #bhangra {
+            width: 80px;
+            height: 80px;
+        }
+
+        #melody {
+            width: 80px;
+            height: 80px;
+        }
+        .cards>a{
+            font-size:15px;
+        }
+        .cards:hover{
+            width:75px;
+            height:75px;
+        }
+
+        #pop-main {
+            font-size: 30px;
+            text-align:left;
+            width:100%;
+        }
+        #pop-main>h2{
+            font-size:20px;
+            
+        }
+        .pop-pic{
+            height:60px;
+            width:60px;
+        }
+        .pop-a{
+            width:450px;
+            height:220px;
+            margin-left:-160px;          
+            }
+        .list{
+            margin-left:80px
+        }
+
+        #melody-main {
+            font-size: 30px;
+            text-align: left;
+            width: 100%;
+        }
+
+            #melody-main > h2 {
+                font-size: 20px;
+            }
+
+        .melody-pic {
+            height: 60px;
+            width: 60px;
+        }
+
+        .melody-a {
+            width: 450px;
+            height: 220px;
+            margin-left: -160px;
+        }
+        #old-main {
+            font-size: 30px;
+            text-align: left;
+            width: 100%;
+        }
+
+            #old-main > h2 {
+                font-size: 20px;
+            }
+
+        .old-pic {
+            height: 60px;
+            width: 60px;
+        }
+
+        .old-a {
+            width: 450px;
+            height: 220px;
+            margin-left: -160px;
+        }
+
+       
+
+        #classical-main {
+            font-size: 30px;
+            text-align: left;
+            width: 100%;
+        }
+
+            #classical-main > h2 {
+                font-size: 20px;
+            }
+
+        .classical-pic {
+            height: 60px;
+            width: 60px;
+        }
+
+        .classical-a {
+            width: 450px;
+            height: 220px;
+            margin-left: -160px;
+        }
+
+        
+
+        #folk-main {
+            font-size: 30px;
+            text-align: left;
+            width: 100%;
+        }
+
+            #folk-main > h2 {
+                font-size: 20px;
+            }
+
+        .folk-pic {
+            height: 60px;
+            width: 60px;
+        }
+
+        .folk-a {
+            width: 450px;
+            height: 220px;
+            margin-left: -160px;
+        }
+
+        
+
+        #bhangra-main {
+            font-size: 30px;
+            text-align: left;
+            width: 100%;
+        }
+
+            #bhangra-main > h2 {
+                font-size: 20px;
+            }
+
+        .bhangra-pic {
+            height: 60px;
+            width: 60px;
+        }
+
+        .bhangra-a {
+            width: 450px;
+            height: 220px;
+            margin-left: -160px;
+        }
+
+    }
 
 
 

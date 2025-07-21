@@ -3,9 +3,165 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Folk Music|Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="StyleSheet1.css" />
 </head>
 <body>
+    <div id="folk-main">
 
+        <h1 data-aos="fade-left">ᖴᗝᒪᛕ ᗰᑌᔕᎥᑕ</h1>
+        <hr>
+        <h2 data-aos="zoom-out">
+            The heartfelt voice of tradition, telling stories rooted in culture and everyday life.
+        </h2>
+
+
+
+
+        <div id="folk-audio">
+            <section id="folk-sec">
+
+                <div class="folk-a" data-aos="zoom-in">
+
+
+
+                    <audio id="player-tu-jhoom" controls>
+                        <source src="tu jhoom.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+                    <div class="folk-data">
+
+                        <div class="folk-pic">
+                            <img src="tu jhoom-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Tu Jhoom</p></li>
+                            <li><p><b>ARTIST</b>:Abida Parveen, Naseebo Lal</p></li>
+                            <li><p><b>ALBUM</b>:Coke Studio</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+               
+
+
+                <div class="folk-a" data-aos="zoom-in">
+
+
+
+                    <audio id="player-lathe" controls>
+                        <source src="lathe.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="folk-data">
+
+                        <div class="folk-pic">
+                            <img src="lathe-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Lathe Di Chadar</p></li>
+                            <li><p><b>ARTIST</b>:Musarrat Nazir</p></li>
+                            <li><p><b>ALBUM ART</b>:Punjabi Folk</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="folk-a" data-aos="zoom-in">
+
+
+
+                    <audio id="player-laung" controls>
+                        <source src="laung.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="folk-data">
+
+                        <div class="folk-pic">
+                            <img src="lathe-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Laung Gawacha</p></li>
+                            <li><p><b>ARTIST</b>:Musarrat Nazir</p></li>
+                            <li><p><b>ALBUM ART</b>:Punjabi Folk</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="folk-a" data-aos="zoom-in">
+
+
+
+                    <audio id="player-hai" controls>
+                        <source src="hai.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="folk-data">
+
+                        <div class="folk-pic">
+                            <img src="hai-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>: Hai O Rabba</p></li>
+                            <li><p><b>ARTIST</b>:Reshma</p></li>
+                            <li><p><b>ALBUM ART</b>:The Best Of Swar Utsav 2001 (Fusion And Folk)</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+
+            </section>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <script>
+        const playerHai = new Plyr('#player-hai');
+        const playerLaung = new Plyr('#player-laung');
+        const playerLathe = new Plyr('#player-lathe');
+        const playerUmraan = new Plyr('#player-umraan');
+        const playerTuJhoom = new Plyr('#player-tu-jhoom');
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
 </body>
 </html>

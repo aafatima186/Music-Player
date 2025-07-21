@@ -3,9 +3,187 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>old Music|Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="StyleSheet1.css" />
 </head>
 <body>
+    <div id="old-main">
 
+        <h1 data-aos="fade-left">ᗝᒪᗪ ᗰᑌᔕᎥᑕ </h1>
+        <hr>
+        <h2 data-aos="zoom-out">
+            A nostalgic journey through timeless melodies that echo the golden era of music.
+        </h2>
+
+
+
+
+        <div id="old-audio">
+            <section id="old-sec">
+
+                <div class="old-a" data-aos="zoom-in">
+
+
+
+                    <audio id="player-gaata-rahe" controls>
+                        <source src="gaata rahe.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+                    <div class="old-data">
+
+                        <div class="old-pic">
+                            <img src="gaata rahe-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Gaata Rahe Mera Dil</p></li>
+                            <li><p><b>ARTIST</b>: S. D. Burman</p></li>
+                            <li><p><b>ALBUM</b>:Guide</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="old-a" data-aos="zoom-in">
+
+
+
+                    <audio id="player-yeh-raat" controls>
+                        <source src="yeh raat.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="old-data">
+
+                        <div class="old-pic">
+                            <img src="yeh raat-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Yeh Raat Bheegi Bheegi</p></li>
+                            <li><p><b>ARTIST</b>:Manna Dey, Lata Mangeshkar</p></li>
+                            <li><p><b>ALBUM</b>:Chori Chori 1956</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="old-a" data-aos="zoom-in">
+
+
+
+                    <audio id="player-aankhon-hi" controls>
+                        <source src="aankhon hi.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="old-data">
+
+                        <div class="old-pic">
+                            <img src="aankhon hi-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>: Leke Pehla Pehla Pyar</p></li>
+                            <li><p><b>ARTIST</b>: O. P. Nayyar, Mohammed Rafi, Geeta Dutt</p></li>
+                            <li><p><b>ALBUM</b>:C.I.D</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="old-a" data-aos="zoom-in">
+
+
+
+                    <audio id="player-aaja-sanam" controls>
+                        <source src="aaja sanam.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="old-data">
+
+                        <div class="old-pic">
+                            <img src="aaja sanam-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>: Aaja Sanam Madhur Chandni Men</p></li>
+                            <li><p><b>ARTIST</b>: Lata Mangeshkar, Manna Dey</p></li>
+                            <li><p><b>ALBUM</b>:Chori Chori 1956</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="old-a" data-aos="zoom-in">
+
+
+
+                    <audio id="player-yeh-raatein" controls>
+                        <source src="yeh raatein.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="old-data">
+
+                        <div class="old-pic">
+                            <img src="yeh raatein-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>: Yeh Raaten Yeh Mausam</p></li>
+                            <li><p><b>ARTIST</b>: Kishore Kumar, Asha Bhosle, Ravi</p></li>
+                            <li><p><b>ALBUM</b>:Dilli Ka Thug</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <script>
+        const playerGaataRahe = new Plyr('#player-gaata-rahe');
+        const playerYehRaatein = new Plyr('#player-yeh-raatein');
+        const playerAankhonHi = new Plyr('#player-aankhon-hi');
+        const playerYehRaat = new Plyr('#player-yeh-raat');
+        const playerAajaSanam = new Plyr('#player-aaja-sanam');
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
 </body>
 </html>

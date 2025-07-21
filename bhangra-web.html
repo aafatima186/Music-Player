@@ -3,9 +3,188 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Bhangra Music|Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="StyleSheet1.css" />
 </head>
 <body>
+    <div id="bhangra-main">
 
+        <h1 data-aos="fade-left">ᗷᕼᗩᑎǤᖇᗩ ᗰᑌᔕᎥᑕ</h1>
+        <hr>
+        <h2 data-aos="zoom-out">
+            A vibrant burst of rhythm and energy that makes every heartbeat dance.
+        </h2>
+
+
+
+
+        <div id="bhangra-audio">
+            <section id="bhangra-sec">
+
+                <div class="bhangra-a" data-aos="zoom-in">
+
+                    
+
+                    <audio id="player-nach" controls>
+                        <source src="nach.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+                    <div class="bhangra-data">
+
+                        <div class="bhangra-pic">
+                            <img src="nach-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Nach Majajan</p></li>
+                            <li><p><b>ARTIST</b>:Abrar ul Haq</p></li>
+                            <li><p><b>ALBUM</b>:Assan Janna Mall O Mall</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="bhangra-a" data-aos="zoom-in">
+
+                
+
+                    <audio id="player-jinne" controls>
+                        <source src="jinne.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="bhangra-data">
+
+                        <div class="bhangra-pic">
+                            <img src="jinne-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Jinne Mera Dil Luteya</p></li>
+                            <li><p><b>ARTIST</b>:Jazzy B</p></li>
+                            <li><p><b>ALBUM</b>:Romeo</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="bhangra-a" data-aos="zoom-in">
+
+                    
+
+                    <audio id="player-sajan" controls>
+                        <source src="sajan.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="bhangra-data">
+
+                        <div class="bhangra-pic">
+                            <img src="sajan-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Sajan Mere Satrangiya</p></li>
+                            <li><p><b>ARTIST</b>:Daler Mehndi </p></li>
+                            <li><p><b>ALBUM ART</b>:Ekdana - Daler Mehndi</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="bhangra-a" data-aos="zoom-in">
+
+                    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+
+                    <audio id="player-ballay" controls>
+                        <source src="ballay.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="bhangra-data">
+
+                        <div class="bhangra-pic">
+                            <img src="ballay-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Ballay Ballay</p></li>
+                            <li><p><b>ARTIST</b>: Aima Baig,Abrar-ul-Haq</p></li>
+                            <li><p><b>ALBUM ART</b>:Coke Studio</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="bhangra-a" data-aos="zoom-in">
+
+
+
+                    <audio id="player-sauda" controls>
+                        <source src="sauda.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="bhangra-data">
+
+                        <div class="bhangra-pic">
+                            <img src="sauda-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>: Sayda Khara Khara</p></li>
+                            <li><p><b>ARTIST</b>:Sukhbir</p></li>
+                            <li><p><b>ALBUM ART</b>:Hai Energy</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+
+            </section>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <script>
+        const playerNach = new Plyr('#player-nach');
+        const playerJinne = new Plyr('#player-jinne');
+        const playerSajan = new Plyr('#player-sajan');
+        const playerSauda = new Plyr('#player-sauda');
+        const playerBallay = new Plyr('#player-ballay');
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
 </body>
 </html>

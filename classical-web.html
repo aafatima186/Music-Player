@@ -3,9 +3,185 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Classical Music|Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="StyleSheet1.css" />
 </head>
 <body>
+    <div id="classical-main">
 
+        <h1 data-aos="fade-left">ᑕᒪᗩᔕᔕᎥᑕᗩᒪ ᗰᑌᔕᎥᑕ </h1>
+        <hr>
+        <h2 data-aos="zoom-out">
+            An elegant blend of harmony and form that transcends time and stirs the soul.
+        </h2>
+
+
+
+
+        <div id="classical-audio">
+            <section id="classical-sec">
+
+                <div class="classical-a" data-aos="zoom-in">
+
+                    
+
+                    <audio id="player-aaj-jaane" controls>
+                        <source src="aaj jaane.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+                    <div class="classical-data">
+
+                        <div class="classical-pic">
+                            <img src="aaj jaane-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Aaj Jaane Ki Zid Na Kro</p></li>
+                            <li><p><b>ARTIST</b>:Farida Khanum</p></li>
+                            <li><p><b>ALBUM ART</b>:Ghazal</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="classical-a" data-aos="zoom-in">
+
+                    
+
+                    <audio id="player-daaghe-dil" controls>
+                        <source src="daaghe dil.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="classical-data">
+
+                        <div class="classical-pic">
+                            <img src="daaghe dil-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Daagh e Dil Humko Yaad</p></li>
+                            <li><p><b>ARTIST</b>:Iqbal Bano</p></li>
+                            <li><p><b>ALBUM ART</b>:Ghazal</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="classical-a" data-aos="zoom-in">
+
+                   
+
+                    <audio id="player-lag-ja" controls>
+                        <source src="lag ja.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="classical-data">
+
+                        <div class="classical-pic">
+                            <img src="lag ja-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Lag Ja Gale se</p></li>
+                            <li><p><b>ARTIST</b>:Madan Mohan, Lata Mangeshkar</p></li>
+                            <li><p><b>ALBUM</b>:Woh Kaun Thi (1964)</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="classical-a" data-aos="zoom-in">
+
+
+                    <audio id="player-tum-apna" controls>
+                        <source src="tum apna.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="classical-data">
+
+                        <div class="classical-pic">
+                            <img src="tum apna-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>:Tum Apna Ranj o Gham</p></li>
+                            <li><p><b>ARTIST</b>:Jagjit Kaur</p></li>
+                            <li><p><b>ALBUM ART</b>:Shagoon</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="classical-a" data-aos="zoom-in">
+
+                   
+
+                    <audio id="player-ranjish" controls>
+                        <source src="ranjish.mp3" type="audio/mp3" />
+                    </audio>
+
+
+
+
+
+
+                    <div class="classical-data">
+
+                        <div class="classical-pic">
+                            <img src="ranjish-pic.png" />
+                        </div>
+                        <ul class="list">
+                            <li><p><b>TITLE</b>: Ranjish Hi Sahi</p></li>
+                            <li><p><b>ARTIST</b>: Mehdi Hassan</p></li>
+                            <li><p><b>ALBUM ART</b>:Ghazal</p></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <script>
+        const playerTumApna = new Plyr('#player-tum-apna');
+        const playerRanjish = new Plyr('#player-ranjish');
+        const playerDaagheDil = new Plyr('#player-daaghe-dil');
+        const playerLagJa = new Plyr('#player-lag-ja');
+        const playerAajJaane = new Plyr('#player-aaj-jaane');
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
 </body>
 </html>
