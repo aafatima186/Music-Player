@@ -16,46 +16,54 @@
 
 
 
-    #bg-main::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.4); /* dark overlay */
-    }
+#bg-main::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* dark overlay */
+}
 
 
 #main {
     display: flex;
-    
-    background-color:firebrick;
-    padding:100px;
+    background-color: firebrick;
+    padding: 100px;
 }
-    #main > h2 {
+
+#main-text{
+    display:flex;
+    flex-direction:column;
+}
+    #main-text > h2 {
         font-size: 50px;
         color: #FDF6EC;
+    }
+    #main-text > p {
+        color: #FDF6EC;
+        font-size: 20px;
     }
 
 #main2-sec {
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
 }
-   
 
-    #pop {
-        background-image: url(pop.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 200px;
-        height: 200px;
-        border:solid;
-        border-radius:10px;
 
-    }
-    #old {
+#pop {
+    background-image: url(pop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border: solid;
+    border-radius: 10px;
+}
+
+#old {
     background-image: url(old.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -64,6 +72,7 @@
     border: solid;
     border-radius: 10px;
 }
+
 #classical {
     background-image: url(classical.jpg);
     background-size: cover;
@@ -73,6 +82,7 @@
     border: solid;
     border-radius: 10px;
 }
+
 #folk {
     background-image: url(folk.jpg);
     background-size: cover;
@@ -82,6 +92,7 @@
     border: solid;
     border-radius: 10px;
 }
+
 #melody {
     background-image: url(melody.jpg);
     background-size: cover;
@@ -102,26 +113,31 @@
     border-radius: 10px;
 }
 
-#pop:hover{
-    width:180px;
-    height:180px;
+#pop:hover {
+    width: 180px;
+    height: 180px;
 }
+
 #old:hover {
     width: 180px;
     height: 180px;
 }
+
 #folk:hover {
     width: 180px;
     height: 180px;
 }
+
 #bhangra:hover {
     width: 180px;
     height: 180px;
 }
+
 #classical:hover {
     width: 180px;
     height: 180px;
 }
+
 #melody:hover {
     width: 180px;
     height: 180px;
@@ -136,47 +152,43 @@
 
 
 .cards > a {
-    bottom:30px;
+    bottom: 30px;
     text-decoration: none;
     color: black;
     font-size: 20px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 
 
-    .cards > a:hover{
-        color:firebrick;
-        
+    .cards > a:hover {
+        color: firebrick;
     }
 
 #pop-main {
-    
-    padding:100px;
+    padding: 100px;
     background-color: darkorange;
     font-size: 45px;
     color: #FDF6EC;
     text-align: left;
-    
 }
 
     #pop-main > h2 {
-        text-align :center;
-        font-size:25px;
-
+        text-align: center;
+        font-size: 25px;
     }
 
 
 #pop-audio {
-    
     padding: 100px;
-   
 }
-#pop-sec{
-    display:flex;
-    flex-direction:column;
-    gap:50px;
+
+#pop-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
+
 .pop-a {
     margin-top: -30px;
     margin-left: -30px;
@@ -188,40 +200,42 @@
     border: dashed;
     border-block-color: azure;
 }
-/* Target Plyr player */
-.pop-a > .plyr--audio {
-    --plyr-color-main: hotpink; /* Main pink color */
+    /* Target Plyr player */
+    .pop-a > .plyr--audio {
+        --plyr-color-main: hotpink; /* Main pink color */
+    }
+
+        /* Optional: background color and styling */
+        .pop-a > .plyr--audio .plyr__controls {
+            background-color: #ffe6f0; /* light pink background */
+            border-radius: 8px;
+        }
+
+        .pop-a > .plyr--audio .plyr__control {
+            color: white;
+            background-color: hotpink;
+            border-radius: 5px;
+        }
+
+        .pop-a > .plyr--audio .plyr__progress input[type=range] {
+            background-color: pink;
+        }
+
+.pop-data {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 
-    /* Optional: background color and styling */
-    .pop-a > .plyr--audio .plyr__controls {
-        background-color: #ffe6f0; /* light pink background */
-        border-radius: 8px;
-    }
-
-    .pop-a > .plyr--audio .plyr__control {
-        color: white;
-        background-color: hotpink;
-        border-radius: 5px;
-    }
-
-    .pop-a > .plyr--audio .plyr__progress input[type=range] {
-        background-color: pink;
-    }
-    .pop-data{
-        display:flex;
-        justify-content:flex-start;
-        flex-direction:row;
-    }
-    .pop-pic>img{
-        height:150px;
-        width:130px;
-    }
+.pop-pic > img {
+    height: 150px;
+    width: 130px;
+}
 
 
 #melody-main {
     padding: 100px;
-    background-color:indianred;
+    background-color: indianred;
     font-size: 45px;
     color: #FDF6EC;
     text-align: left;
@@ -246,12 +260,12 @@
 .melody-a {
     margin-top: -30px;
     margin-left: -30px;
-    background-color:darksalmon;
+    background-color: darksalmon;
     font-size: 15px;
     border-radius: 10px;
     font-family: Arial;
     color: azure;
-    border:groove;
+    border: groove;
     border-block-color: azure;
 }
     /* Target Plyr player */
@@ -261,7 +275,7 @@
 
         /* Optional: background color and styling */
         .melody-a > .plyr--audio .plyr__controls {
-            background-color:lightcoral; /* light pink background */
+            background-color: lightcoral; /* light pink background */
             border-radius: 8px;
         }
 
@@ -291,7 +305,7 @@
 
 #old-main {
     padding: 100px;
-    background-color:darkkhaki;
+    background-color: darkkhaki;
     font-size: 45px;
     color: #FDF6EC;
     text-align: left;
@@ -316,12 +330,12 @@
 .old-a {
     margin-top: -30px;
     margin-left: -30px;
-    background-color:darkgoldenrod;
+    background-color: darkgoldenrod;
     font-size: 15px;
     border-radius: 10px;
     font-family: Arial;
     color: azure;
-    border:groove;
+    border: groove;
     border-block-color: azure;
 }
     /* Target Plyr player */
@@ -331,18 +345,18 @@
 
         /* Optional: background color and styling */
         .old-a > .plyr--audio .plyr__controls {
-            background-color:burlywood; /* light pink background */
+            background-color: burlywood; /* light pink background */
             border-radius: 8px;
         }
 
         .old-a > .plyr--audio .plyr__control {
             color: white;
-            background-color:darkgoldenrod;
+            background-color: darkgoldenrod;
             border-radius: 5px;
         }
 
         .old-a > .plyr--audio .plyr__progress input[type=range] {
-            background-color:burlywood;
+            background-color: burlywood;
         }
 
 .old-data {
@@ -359,7 +373,7 @@
 
 #classical-main {
     padding: 100px;
-    background-color:saddlebrown;
+    background-color: saddlebrown;
     font-size: 45px;
     color: #FDF6EC;
     text-align: left;
@@ -384,12 +398,12 @@
 .classical-a {
     margin-top: -30px;
     margin-left: -30px;
-    background-color:burlywood;
+    background-color: burlywood;
     font-size: 15px;
     border-radius: 10px;
     font-family: Arial;
     color: azure;
-    border:ridge;
+    border: ridge;
     border-block-color: azure;
 }
     /* Target Plyr player */
@@ -399,7 +413,7 @@
 
         /* Optional: background color and styling */
         .classical-a > .plyr--audio .plyr__controls {
-            background-color:bisque; /* light pink background */
+            background-color: bisque; /* light pink background */
             border-radius: 8px;
         }
 
@@ -410,7 +424,7 @@
         }
 
         .classical-a > .plyr--audio .plyr__progress input[type=range] {
-            background-color:bisque;
+            background-color: bisque;
         }
 
 .classical-data {
@@ -427,7 +441,7 @@
 
 #folk-main {
     padding: 100px;
-    background-color:cadetblue;
+    background-color: cadetblue;
     font-size: 45px;
     color: #FDF6EC;
     text-align: left;
@@ -452,7 +466,7 @@
 .folk-a {
     margin-top: -30px;
     margin-left: -30px;
-    background-color:lightcoral;
+    background-color: lightcoral;
     font-size: 15px;
     border-radius: 10px;
     font-family: Arial;
@@ -473,7 +487,7 @@
 
         .folk-a > .plyr--audio .plyr__control {
             color: white;
-            background-color:lightcoral;
+            background-color: lightcoral;
             border-radius: 5px;
         }
 
@@ -495,7 +509,7 @@
 
 #bhangra-main {
     padding: 100px;
-    background-color:darkred;
+    background-color: darkred;
     font-size: 45px;
     color: #FDF6EC;
     text-align: left;
@@ -520,7 +534,7 @@
 .bhangra-a {
     margin-top: -30px;
     margin-left: -30px;
-    background-color:forestgreen;
+    background-color: forestgreen;
     font-size: 15px;
     border-radius: 10px;
     font-family: Arial;
@@ -535,7 +549,7 @@
 
         /* Optional: background color and styling */
         .bhangra-a > .plyr--audio .plyr__controls {
-            background-color:lightgreen; /* light pink background */
+            background-color: lightgreen; /* light pink background */
             border-radius: 8px;
         }
 
@@ -560,26 +574,24 @@
     width: 130px;
 }
 
-    @media (max-width: 768px) {
-        #bg-main {
+@media (max-width: 768px) {
+    #bg-main {
         font-size: 30px;
         height: 500px;
         background-size: contain;
     }
 
         #bg-main::before {
-           
             height: inherit;
-            width:100%;
-            
+            width: 100%;
         }
+
     #main {
         padding: 70px;
         display: grid;
-        
     }
+
     #main2-sec {
-        
         justify-content: center;
         gap: 10px;
     }
@@ -621,211 +633,210 @@
         width: 100px;
         height: 100px;
     }
-    
-
 }
 
 
 
-    @media (max-width: 480px) {
-        #bg-main {
-            font-size: 30px;
-            height: 400px;
-            background-size: contain;
-        }
+@media (max-width: 480px) {
+    #bg-main {
+        font-size: 30px;
+        height: 400px;
+        background-size: contain;
+    }
 
-            #bg-main::before {
-                height: inherit;
-                width: 100%;
-            }
-
-        #main {
-            display: grid;
-            padding: 70px;
-        }
-
-            #main > h2 {
-                margin-top: -30px;
-                margin-bottom: 50px;
-            }
-
-        #main2-sec {
-            justify-content: center;
-            gap: 10px;
-        }
-
-
-        #pop {
-            width: 80px;
-            height: 80px;
-        }
-
-        #old {
-            width: 80px;
-            height:80px;
-        }
-
-        #folk {
-            width: 80px;
-            height: 80px;
-        }
-
-        #classical {
-            width: 80px;
-            height: 80px;
-        }
-
-        #bhangra {
-            width: 80px;
-            height: 80px;
-        }
-
-        #melody {
-            width: 80px;
-            height: 80px;
-        }
-        .cards>a{
-            font-size:15px;
-        }
-        .cards:hover{
-            width:75px;
-            height:75px;
-        }
-
-        #pop-main {
-            font-size: 30px;
-            text-align:left;
-            width:100%;
-        }
-        #pop-main>h2{
-            font-size:20px;
-            
-        }
-        .pop-pic{
-            height:60px;
-            width:60px;
-        }
-        .pop-a{
-            width:450px;
-            height:220px;
-            margin-left:-160px;          
-            }
-        .list{
-            margin-left:80px
-        }
-
-        #melody-main {
-            font-size: 30px;
-            text-align: left;
+        #bg-main::before {
+            height: inherit;
             width: 100%;
         }
 
-            #melody-main > h2 {
-                font-size: 20px;
-            }
+    #main {
+        display: grid;
+        padding: 70px;
+    }
 
-        .melody-pic {
-            height: 60px;
-            width: 60px;
+        #main > h2 {
+            margin-top: -30px;
+            margin-bottom: 50px;
         }
 
-        .melody-a {
-            width: 450px;
-            height: 220px;
-            margin-left: -160px;
-        }
-        #old-main {
-            font-size: 30px;
-            text-align: left;
-            width: 100%;
-        }
+    #main2-sec {
+        justify-content: center;
+        gap: 10px;
+    }
 
-            #old-main > h2 {
-                font-size: 20px;
-            }
 
-        .old-pic {
-            height: 60px;
-            width: 60px;
-        }
+    #pop {
+        width: 90px;
+        height: 90px;
+    }
 
-        .old-a {
-            width: 450px;
-            height: 220px;
-            margin-left: -160px;
-        }
+    #old {
+        width: 90px;
+        height: 90px;
+    }
 
-       
+    #folk {
+        width: 90px;
+        height: 90px;
+    }
 
-        #classical-main {
-            font-size: 30px;
-            text-align: left;
-            width: 100%;
-        }
+    #classical {
+        width: 90px;
+        height: 90px;
+    }
 
-            #classical-main > h2 {
-                font-size: 20px;
-            }
+    #bhangra {
+        width: 90px;
+        height: 90px;
+    }
 
-        .classical-pic {
-            height: 60px;
-            width: 60px;
-        }
+    #melody {
+        width: 90px;
+        height: 90px;
+    }
 
-        .classical-a {
-            width: 450px;
-            height: 220px;
-            margin-left: -160px;
-        }
+    .cards > a {
+        font-size: 15px;
+    }
 
-        
+    .cards:hover {
+        width: 75px;
+        height: 75px;
+    }
 
-        #folk-main {
-            font-size: 30px;
-            text-align: left;
-            width: 100%;
+    #pop-main {
+        font-size: 30px;
+        text-align: left;
+        width: 100%;
+    }
+
+        #pop-main > h2 {
+            font-size: 20px;
         }
 
-            #folk-main > h2 {
-                font-size: 20px;
-            }
+    .pop-pic {
+        height: 60px;
+        width: 60px;
+    }
 
-        .folk-pic {
-            height: 60px;
-            width: 60px;
+    .pop-a {
+        width: 450px;
+        height: 220px;
+        margin-left: -160px;
+    }
+
+    .list {
+        margin-left: 80px
+    }
+
+    #melody-main {
+        font-size: 30px;
+        text-align: left;
+        width: 100%;
+    }
+
+        #melody-main > h2 {
+            font-size: 20px;
         }
 
-        .folk-a {
-            width: 450px;
-            height: 220px;
-            margin-left: -160px;
+    .melody-pic {
+        height: 60px;
+        width: 60px;
+    }
+
+    .melody-a {
+        width: 450px;
+        height: 220px;
+        margin-left: -160px;
+    }
+
+    #old-main {
+        font-size: 30px;
+        text-align: left;
+        width: 100%;
+    }
+
+        #old-main > h2 {
+            font-size: 20px;
         }
 
-        
+    .old-pic {
+        height: 60px;
+        width: 60px;
+    }
 
-        #bhangra-main {
-            font-size: 30px;
-            text-align: left;
-            width: 100%;
-        }
-
-            #bhangra-main > h2 {
-                font-size: 20px;
-            }
-
-        .bhangra-pic {
-            height: 60px;
-            width: 60px;
-        }
-
-        .bhangra-a {
-            width: 450px;
-            height: 220px;
-            margin-left: -160px;
-        }
-
+    .old-a {
+        width: 450px;
+        height: 220px;
+        margin-left: -160px;
     }
 
 
 
+    #classical-main {
+        font-size: 30px;
+        text-align: left;
+        width: 100%;
+    }
 
+        #classical-main > h2 {
+            font-size: 20px;
+        }
+
+    .classical-pic {
+        height: 60px;
+        width: 60px;
+    }
+
+    .classical-a {
+        width: 450px;
+        height: 220px;
+        margin-left: -160px;
+    }
+
+
+
+    #folk-main {
+        font-size: 30px;
+        text-align: left;
+        width: 100%;
+    }
+
+        #folk-main > h2 {
+            font-size: 20px;
+        }
+
+    .folk-pic {
+        height: 60px;
+        width: 60px;
+    }
+
+    .folk-a {
+        width: 450px;
+        height: 220px;
+        margin-left: -160px;
+    }
+
+
+
+    #bhangra-main {
+        font-size: 30px;
+        text-align: left;
+        width: 100%;
+    }
+
+        #bhangra-main > h2 {
+            font-size: 20px;
+        }
+
+    .bhangra-pic {
+        height: 60px;
+        width: 60px;
+    }
+
+    .bhangra-a {
+        width: 450px;
+        height: 220px;
+        margin-left: -160px;
+    }
+}
